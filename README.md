@@ -16,16 +16,18 @@ This code is tested and known to work with Java 11 for building the project.
 
 ### Java Version Requirements
 
-Note: Different parts of the App Inventor setup require different Java versions:
+### Java Version Requirements
 
-- **Build (Ant / webapp):** Requires Java 11
-- **Local App Engine Development Server:** Requires Java 17 (as specified in appengine-web.xml)
+Note: Different parts of the App Inventor setup may use different Java versions:
+
+* **Build (Ant / webapp):** Requires Java 11
+* **Local Development Server:** Works with Java 11 (Java 17 is not strictly required)
+* **App Engine Deployment:** May use Java 17 depending on the environment configuration
 
 If you have multiple JDKs installed, ensure:
-- Java 11 is used when running Ant builds
-- Java 17 is used when running the local development server
 
-This distinction is important to avoid setup issues.
+* Java 11 is used when running Ant builds
+* The appropriate Java version is used depending on your deployment environment
 
 ## Contributors
 
